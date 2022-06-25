@@ -23,6 +23,12 @@
   }
 }
 
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
+}
+
 .navbar-toggler-icon {
   background-image: url("../images/bars.svg");
 }
@@ -57,7 +63,7 @@
 
 .nav-link {
   color: $white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   &:hover {
     color: $primary;
   }
