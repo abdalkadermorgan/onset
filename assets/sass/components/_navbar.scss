@@ -1,23 +1,69 @@
 .navbar {
-    
+  &.fixed-top {
+    background: $dark;
+    padding: 1rem 5rem;
+    @media (max-width: 991px) {
+        & {
+            padding: 1rem 2rem;
+        }
+    }
+  }
 }
-@media (min-width: 992px){
-    .navbar-expand-lg .navbar-nav .nav-link {
-        margin: 0 0.5rem;}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    background: $light;
+    width: fit-content;
+    padding: 15px 20px;
+    position: absolute;
+    left: 25px;
+    .nav-link {
+      color: $dark;
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("../images/bars.svg");
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin: 0 0.5rem;
+  }
 }
 .navbar-brand {
-    width: 150px;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+  width: 150px;
+  @media (min-width: 1400px) {
+    & {
+      width: 200px;
     }
+  }
+  @media (max-width: 576px) {
+    & {
+      width: 100px;
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .nav-link {
-    color: $white;
-    font-size: 1.1rem;
-    &:hover {
-        color: $primary;
+  color: $white;
+  font-size: 1.1rem;
+  &:hover {
+    color: $primary;
+  }
+  @media (min-width: 1400px) {
+    & {
+      font-size: 1.5rem;
     }
+  }
 }
