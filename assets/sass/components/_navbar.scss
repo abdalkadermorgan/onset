@@ -2,12 +2,21 @@
   &.fixed-top {
     background: $dark;
     padding: 1rem 5rem;
+    margin: 0;
     @media (max-width: 991px) {
         & {
             padding: 1rem 2rem;
         }
     }
   }
+}
+
+.header-contact {
+    margin: 0 !important;
+    background-color: $dark;
+    .navbar {
+        background-color: $dark;
+    }
 }
 
 @media (max-width: 991px) {
