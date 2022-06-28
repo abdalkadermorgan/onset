@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="./node_modules//swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <title>On Set</title>
+  </head>
+  <body>
+    <header id="header" class="header-contact">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg nav-form">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">خدماتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#business">معرض الأعمال</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">المدونة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">من نحن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">تواصل معنا</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="uil uil-globe"></i>
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">ar</a></li>
+                  <li><a class="dropdown-item" href="#">en</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-banner contact-us">
+      <div class="container">
+        <div class="page-title">
+          <h4>تواصل معنا</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us-form section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="الاسم"
+              />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="البريد الالكتروني"
+              />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="mb-4">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="10"
+                placeholder="نص الرسالة"
+              ></textarea>
+            </div>
+          </div>
+          <div class="col-12 captcha">
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                data-callback="onRecaptchaSuccess"
+                data-expired-callback="onRecaptchaResponseExpiry"
+                data-error-callback="onRecaptchaError"
+              ></div>
+
+          </div>
+          <div class="col-12 text-center mt-5">
+            <button type="button" class="btn btn-primary">إرسال</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container section-padding">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3">
+            <div class="footer-logo">
+              <div class="footer-logo_img">
+                <img src="./assets/images/logoFooter.png" alt="" />
+              </div>
+              <div class="contact">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="uil uil-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="uil uil-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="uil uil-youtube"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="footer-contact">
+              <ul>
+                <li>
+                  <a href="#">
+                    <p>00905312660864</p>
+                    <i class="uil uil-phone"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    info@on.set.meedia
+                    <i class="uil uil-envelope-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Fatih/istanbul
+                    <i class="uil uil-location-point"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   -->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>

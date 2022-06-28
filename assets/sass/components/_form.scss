@@ -79,3 +79,35 @@
         border: 2px solid #cecece;
     }
 }
+
+.contact-us {
+        &::before {
+            background-image: url('../images/bgServices.jpg');
+            background-size: cover;
+        }
+        .page-title {
+            h4 {
+                background-color: transparent;
+                font-size: 3rem;
+                color: #000;
+            }
+        }
+}
+
+.contact-us-form {
+    background-color: #000;
+    input,textarea {
+        border-radius: 20px;
+        padding: 0.6rem 1rem;
+    }
+    .btn {
+        font-size: 1rem;
+        color: $white;
+        font-weight: bold;
+        padding: 0.5rem 3rem;
+        border-radius: 20px;
+    }
+    .captcha div {
+        margin: auto;
+    }
+}
