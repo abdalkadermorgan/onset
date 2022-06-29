@@ -179,6 +179,21 @@
   }
 }
 
+.business-mobile-section {
+  .business-mobile {
+    .swiper-wrapper {
+      margin-bottom: 50px;
+    }
+    .swiper-pagination-bullet {
+      background-color: $white;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $primary;
+    }
+    
+  }
+}
+
 .customer {
   &::before {
     content: "";

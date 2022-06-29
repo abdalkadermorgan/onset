@@ -82,6 +82,19 @@ var swiper = new Swiper(".swiper-customer", {
   },
 });
 
+var swiper = new Swiper(".business-mobile", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
+});
+
 var swiper = new Swiper(".swiper-business", {
   slidesPerView: 3,
   grid: {
