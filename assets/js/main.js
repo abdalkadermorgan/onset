@@ -115,14 +115,39 @@ jQuery(document).ready(function ($) {
 
   function fixedMenu(scroll) {
     const headerScroll = document.querySelector(".navbar");
+    const headerScrollMobile = document.querySelector(".mobile-header");
     const documentBody = document.querySelector("body");
 
     if (scroll > 300) {
       documentBody.classList.add("ft");
+      headerScrollMobile.classList.add("fixed-top");
       headerScroll.classList.add("fixed-top");
     } else {
       documentBody.classList.remove("ft");
       headerScroll.classList.remove("fixed-top");
+      headerScrollMobile.classList.remove("fixed-top");
     }
   }
+});
+
+$("#mobile_nav_toggler").click(function () {
+  $("body").addClass("overflow-hidden");
+  $("#page_overlay").fadeIn();
+  // $("#page_overlay").addClass("d-block");
+  $("#mobile_nav").addClass("nav-open");
+  $("#mobile_nav").removeClass("nav-close");
+});
+$("#mobile_nav_close").click(function () {
+  $("body").removeClass("overflow-hidden");
+  // $("#page_overlay").addClass("d-none");
+  $("#page_overlay").fadeOut();
+  $("#mobile_nav").addClass("nav-close");
+  $("#mobile_nav").removeClass("nav-open");
+});
+$("#page_overlay").click(function () {
+  $("body").removeClass("overflow-hidden");
+  // $("#page_overlay").addClass("d-none");
+  $("#page_overlay").fadeOut();
+  $("#mobile_nav").addClass("nav-close");
+  $("#mobile_nav").removeClass("nav-open");
 });

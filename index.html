@@ -20,7 +20,8 @@
     <title>On Set</title>
   </head>
   <body>
-    <header id="header">
+    <div id="page_overlay" class="overlay-body" style="display: none;"></div>
+    <header id="header" class="d-none d-lg-block">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">
@@ -84,6 +85,48 @@
       </div>
     </header>
 
+    <header id="header" class=" d-lg-none">
+        <nav class="navbar mobile-header">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+          <a id="mobile_nav_toggler" class="btn">
+            <i class="uil uil-bars"></i>
+          </a>
+        </nav>
+        <div id="mobile_nav" class="bg-white nav-close">
+          <div id="mobile_nav_close">
+            <i class="uil uil-multiply"></i>
+          </div>
+          <div class="mobile-nav-content">
+            <a href="#" class="nav-link">الرئيسية</a>
+            <a href="#" class="nav-link">خدماتنا</a>
+            <a href="#" class="nav-link">معرض الأعمال</a>
+            <a href="#" class="nav-link">المدونة</a>
+            <a href="#" class="nav-link">من نحن</a>
+            <a href="#" class="nav-link">المدونة</a>
+            <a href="#" class="nav-link">تواصل معنا</a>
+            <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="uil uil-globe"></i>
+          </a>
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li><a class="dropdown-item" href="#">ar</a></li>
+            <li><a class="dropdown-item" href="#">en</a></li>
+          </ul>
+          </div>
+        </div>
+    </header>
+
     <section class="header-slider" id="header-slider">
       <div class="swiper swiper-header">
         <div class="swiper-wrapper">
@@ -98,7 +141,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <iframe
               width="560"
               height="315"
@@ -108,7 +151,7 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-          </div>
+          </div> -->
           <div class="swiper-slide">
             <img src="./assets/images/slide1.jpg" alt="" />
           </div>
@@ -456,8 +499,8 @@
     </section>
 
     <footer>
-      <div class="container section-padding">
-        <div class="row align-items-center">
+      <div class="container section-padding ">
+        <div class="row align-items-center border-top border-white pt-4">
           <div class="col-md-6 mb-3">
             <div class="footer-logo">
               <div class="footer-logo_img">
