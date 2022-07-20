@@ -235,13 +235,17 @@
       justify-content: space-between;
       margin-top: 50px;
       img {
-        width: 60px;
+        width: 68px;
       }
       .customer-information_content {
         p {
           color: $white;
           margin-bottom: 0.5rem;
+          &:last-child {
+            font-size: 1.2rem;
+          }
         }
+        
       }
     }
   }
@@ -346,6 +350,7 @@ footer {
         height: 100%;
         object-fit: cover;
       }
+
     }
     .contact {
       margin-top: 20px;
@@ -404,6 +409,15 @@ footer {
           }
         }
       }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  [dir = ltr] {
+    footer 
+      .footer-logo .footer-logo_img {
+      margin-left: auto;
     }
   }
 }

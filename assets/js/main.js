@@ -14,11 +14,19 @@ var swiper = new Swiper(".swiper-header", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
 
 var swiper = new Swiper(".swiper-services", {
   slidesPerView: 2,
   spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -45,6 +53,10 @@ var swiper = new Swiper(".swiper-services", {
 var swiper = new Swiper(".swiper-partners", {
   slidesPerView: 1,
   spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -70,6 +82,10 @@ var swiper = new Swiper(".swiper-customer", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     992: {
       slidesPerView: 1,
@@ -87,6 +103,10 @@ var swiper = new Swiper(".business-mobile", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     576: {
       slidesPerView: 1,
@@ -99,6 +119,10 @@ var swiper = new Swiper(".swiper-business", {
   slidesPerView: 3,
   grid: {
     rows: 3,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   spaceBetween: 30,
   pagination: {

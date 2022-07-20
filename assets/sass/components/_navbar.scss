@@ -10,6 +10,17 @@
     }
   }
 }
+@media(max-width: 992px) {
+  [dir = rtl] {
+    .navbar {
+      flex-direction: row-reverse;
+    }
+    .navbar-brand {
+      margin-right: 0;
+      margin-left: 1rem;
+    }
+  }
+}
 
 .header-contact {
   margin: 0 !important;
