@@ -10,8 +10,8 @@
     }
   }
 }
-@media(max-width: 992px) {
-  [dir = rtl] {
+@media (min-width: 992px) {
+  [dir="rtl"] {
     .navbar {
       flex-direction: row-reverse;
     }
@@ -94,7 +94,7 @@
   }
 }
 
-[dir = rtl] {
+[dir="rtl"] {
   #mobile_nav.nav-close {
     margin-right: -290px;
     margin-left: 0;
