@@ -213,6 +213,7 @@
     position: relative;
     margin: 30px auto;
     width: 390px;
+    max-width: 100%;
     clip-path: polygon(
       14% 0%,
       100% 0,
@@ -247,6 +248,12 @@
         }
       }
     }
+    @media(max-width: 400px) {
+      & {
+        width: fit-content;
+        max-width: 100%;
+      }
+    }
   }
   .swiper-pagination-bullet {
     color: $light;
@@ -266,6 +273,12 @@
     flex-direction: column;
     width: 300px;
     margin: auto;
+    @media(max-width: 400px) {
+      & {
+        width: fit-content;
+        max-width: 100%;
+      }
+    }
     &_img {
       border: 2px solid $primary;
       clip-path: polygon(
@@ -357,7 +370,7 @@ footer {
       @media (max-width: 576px) {
         & {
           margin-right: auto;
-          width: 100px;
+          width: 150px;
         }
       }
     }
@@ -443,20 +456,12 @@ footer {
             margin: 0;
             @media (max-width: 576px) {
               & {
-                font-size: 0.8em;
+                font-size: 0.9em;
               }
             }
           }
         }
       }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  [dir="ltr"] {
-    footer .footer-logo .footer-logo_img {
-      margin-left: auto;
     }
   }
 }
